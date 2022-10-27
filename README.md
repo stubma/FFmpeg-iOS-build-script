@@ -1,3 +1,5 @@
+# 已将其适配到支持ffmpeg 5.1.2
+
 # FFmpeg iOS build script
 
 See the following repository for Swift package, .xcframeworks and more:
@@ -10,7 +12,7 @@ This is a shell script to build FFmpeg libraries for iOS and tvOS apps.
 
 Tested with:
 
-* FFmpeg 4.3.1
+* FFmpeg 5.1.2
 * Xcode 12.2
 
 ## Requirements
@@ -30,17 +32,13 @@ Use build-ffmpeg-tvos.sh for tvOS.
 
         ./build-ffmpeg.sh arm64
 
-* To build fat libraries for armv7 and x86_64 (64-bit simulator):
+* To build fat libraries for arm64 and x86_64 (64-bit simulator):
 
-        ./build-ffmpeg.sh armv7 x86_64
+        ./build-ffmpeg.sh arm64 x86_64
 
 * To build fat libraries from separately built thin libraries:
 
         ./build-ffmpeg.sh lipo
-
-## Download
-
-You can download a binary for FFmpeg 4.3.1 release at https://downloads.sourceforge.net/project/ffmpeg-ios/ffmpeg-ios-master.tar.bz2
 
 ## External libraries
 
